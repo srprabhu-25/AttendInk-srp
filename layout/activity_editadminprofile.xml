@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editadminprofile"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle1"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backBtn1050"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="Principal Profile"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginTop="-3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgadmin1050"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/ic_person_sanju"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/newadmin105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:ems="10"
+                android:hint=" Name"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/teacid105"-->
+<!--                android:layout_width="379dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/sideway"-->
+<!--                android:ems="10"-->
+<!--                android:textAlignment="center"-->
+<!--                android:padding="12dp"-->
+<!--                android:textSize="19dp"-->
+<!--                android:hint="Student id"-->
+<!--                android:inputType="number"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:textColor="#2B2727" />-->
+
+            <EditText
+                android:id="@+id/adminphoneno105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="Phone no"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+            <TextView
+                android:id="@+id/admingender105"
+                android:layout_width="378dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:hint="Gender"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+
+            <EditText
+                android:id="@+id/adminaddress105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="Address"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:inputType="textPostalAddress"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+            <TextView
+                android:id="@+id/admindate105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="DOB"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+            <EditText
+                android:id="@+id/adminage105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="Age"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+            <EditText
+                android:id="@+id/adminemailid105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="Email id"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+            <EditText
+                android:id="@+id/adminpassword105"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="19dp"
+                android:inputType="textPassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2B2727" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateBtn1050"
+                android:background="@drawable/bg"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Update"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

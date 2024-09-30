@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".Deleteteacher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/backBtn105007"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_arrow_white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the teacher id to delete"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/teacherid"
+            android:layout_width="259dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sideway"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Teacher Id"
+            android:inputType="number"
+            android:textColor="#2B2727" />
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg"
+            android:id="@+id/btnshowidt"
+            android:ems="10"
+            android:text="Show"
+            android:onClick="showidteachers"
+            android:textColor="#2B2727"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/dispname12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispsid12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispgender12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispdep12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispemail12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/disppass12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispphone12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispaddress12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispage12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dispuid12"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+            <Button
+                android:layout_width="152dp"
+                android:layout_height="49dp"
+                android:id="@+id/btndelete"
+                android:text="Delete"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg"
+                android:ems="10"
+                android:textColor="#2B2727"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="152dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg"
+                android:id="@+id/btncancel"
+                android:ems="10"
+                android:text="Cancel"
+                android:textColor="#2B2727"
+                android:textStyle="bold"/>
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

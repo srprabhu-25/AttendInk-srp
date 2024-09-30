@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    android:layout_margin="2dp"
+    android:layout_marginStart="10dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_person_sanju"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametext"
+            android:text="This is demo name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sidtext"
+            android:text="This is id"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/coursetext"
+            android:text="This is course name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_below="@+id/sidtext"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gendertext"
+            android:text="This is gender "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_below="@+id/coursetext"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtext"
+            android:text="This is email"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_below="@+id/gendertext"
+            android:layout_marginLeft="10dp"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/passwordtext"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/emailtext"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@+id/profileimage"-->
+<!--            android:text="This is password"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/agetext"
+            android:text="age "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_below="@+id/emailtext"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phonetext"
+            android:text="This is phoneno"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/profileimage"
+            android:layout_below="@+id/agetext"
+            android:layout_marginLeft="10dp"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/accounttext"-->
+<!--            android:text="This is account"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_toRightOf="@+id/profileimage"-->
+<!--            android:layout_below="@+id/phonetext"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/onlinetext"-->
+<!--            android:text="online"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_toRightOf="@+id/profileimage"-->
+<!--            android:layout_below="@+id/accounttext"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/addresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonetext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profileimage"
+            android:text="This address"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/uidtext"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/addresstext"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@+id/profileimage"-->
+<!--            android:text="uid"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/timestamptext"-->
+<!--            android:text="timestamp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_toRightOf="@+id/profileimage"-->
+<!--            android:layout_below="@id/uidtext"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            />-->
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

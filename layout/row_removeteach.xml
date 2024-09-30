@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_marginStart="10dp"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/renametext1"
+            android:text="This is demo name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retidtext1"
+            android:text="This is id"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_below="@+id/renametext1"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reclasstext1"
+            android:text="This is department name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_below="@+id/retidtext1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regendertext1"
+            android:text="This is gender "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_below="@+id/reclasstext1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reemailtext1"
+            android:text="This is email"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_below="@+id/regendertext1"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reagetext1"
+            android:text="age "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_below="@+id/reemailtext1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rephonetext1"
+            android:text="This is phoneno"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_below="@+id/reagetext1"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/readdresstext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rephonetext1"
+            android:layout_marginLeft="10dp"
+            android:text="This address"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

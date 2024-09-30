@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher_attendance_sheet"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <!--    <include-->
+    <!--        android:id="@+id/ftoolbar"-->
+    <!--        layout="@layout/appbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        tools:layout_editor_absoluteX="8dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/backBtn105000"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_arrow_white"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner51"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sideway"
+        android:textColor="#2B2727"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:entries="@array/classes"
+        />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="4" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <EditText
+                android:id="@+id/date51"
+                android:layout_width="148dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/sideway"
+                android:ems="10"
+                android:hint="DD-MM-YYYY"
+                android:inputType="textPersonName"
+                android:textColor="#181717" />
+
+            <ImageButton
+                android:id="@+id/DateImageButton51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner5"
+                android:layout_alignLeft="@+id/button12"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar_icon" />
+
+            <Button
+                android:id="@+id/button1251"
+                android:layout_width="130dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="viewlist"
+                android:layout_weight="1"
+                android:background="@drawable/bg"
+                android:text="Show"
+                android:textColor="#fff"
+                android:layout_marginStart="8dp"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/list51"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/whtes"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+</LinearLayout>
+
